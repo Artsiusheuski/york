@@ -1,126 +1,116 @@
 import "./main.scss";
 
 function Main() {
+  function openPharagraph(event: React.MouseEvent<HTMLElement>): void {
+    let neighbourNode: Element | null = event.currentTarget.nextElementSibling;
+    if (neighbourNode?.className !== "main_p_order") {
+      neighbourNode?.classList.add("main_p_order");
+    } else neighbourNode?.classList.remove("main_p_order");
+  }
+
   return (
-    <div className="main_conteiner">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
-        aspernatur libero ipsa? Consequuntur debitis quos, quidem, hic quam
-        tempora dolor ipsa illum error delectus consequatur aliquam officiis
-        consectetur modi autem!
-      </p>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, natus,
-        doloribus labore magnam recusandae ipsa culpa quod ex perspiciatis
-        sequi, laboriosam exercitationem vel? Esse, aspernatur. Vero nam iusto
-        esse laborum eius, et rerum ea doloremque laudantium veritatis animi
-        temporibus, facere ad quos consequatur perferendis at aperiam voluptatem
-        qui voluptate? Dolor asperiores quam quas impedit rem, tenetur corporis
-        distinctio fuga quasi iure laudantium a sequi optio id harum quae esse
-        cum commodi! Cupiditate eaque a saepe dignissimos iusto nihil minus
-        rerum inventore, explicabo accusantium libero laborum quisquam nemo
-        repellendus excepturi nam labore praesentium temporibus, dolore corrupti
-        vel placeat ipsam. Iure mollitia id et cumque optio ex iste modi
-        adipisci quibusdam assumenda aliquid, nesciunt porro minima itaque
-        ratione fuga laboriosam error temporibus saepe soluta necessitatibus
-        hic! In hic fugiat, itaque veniam laborum nihil, commodi consequatur
-        reiciendis optio rerum nam saepe. Ipsum doloribus possimus quasi quam
-        autem recusandae? Doloremque delectus, vero cumque hic error doloribus
-        ad accusantium iure itaque veritatis soluta aperiam provident voluptas
-        voluptate esse magni ex corporis tempore eligendi! Suscipit vero enim
-        ducimus molestias! Fugit, asperiores. Quod, quas. Pariatur alias quas
-        aliquam nemo sunt! Culpa, suscipit. Iure, a? Molestiae obcaecati iste
-        velit veniam blanditiis eum, quaerat ipsa ea deleniti alias esse culpa
-        illum eaque necessitatibus officiis tenetur nulla nisi quisquam dolorem
-        soluta consequuntur provident? At tempore quis asperiores maxime
-        recusandae illum quod perspiciatis dolore accusamus placeat fugiat,
-        accusantium earum natus nulla possimus odit culpa sint eligendi et
-        dolorum repudiandae officia? Repellat distinctio magnam voluptatem, eos
-        tempore cum nam nihil totam id harum? Dolorem nam doloribus assumenda
-        voluptates quis repellendus iure animi? Non aliquid obcaecati corporis
-        dolorem nulla, voluptas cupiditate natus quod eum eligendi adipisci
-        illo, velit earum! Assumenda, iste doloribus quasi sequi, debitis
-        pariatur soluta facilis id dicta natus odit cupiditate impedit sunt
-        nostrum dignissimos magnam enim eaque fugiat est culpa provident
-        voluptatibus expedita non! Fugit error esse suscipit obcaecati molestiae
-        asperiores beatae, laborum dolore magni, ex quas commodi autem ab!
-        Repudiandae, fuga earum. Maiores commodi dolore quam voluptatum ea a
-        autem aliquam. Quod explicabo ea maxime cupiditate nisi ipsam non qui,
-        veritatis soluta possimus. Voluptatem cumque sunt cum sint sapiente
-        aperiam blanditiis mollitia debitis porro deserunt molestias ea
-        repellendus illum harum enim eveniet nulla, quae ratione architecto. Nam
-        nemo eveniet quam iste obcaecati rerum veniam quaerat porro quasi
-        quidem, voluptas aliquid sunt. Fuga assumenda optio minima? Aliquid,
-        expedita asperiores officia pariatur cumque, exercitationem qui
-        similique unde reiciendis cupiditate earum. Laborum numquam ducimus
-        aliquid quos aspernatur iure ipsa recusandae sed sequi vero optio
-        quibusdam id dolores eius possimus quaerat impedit, nesciunt natus,
-        voluptatum esse ipsum. Error delectus amet inventore cumque dolorum
-        odit! Consequatur veniam molestias aliquid ratione nostrum quae voluptas
-        quam. In tempora illo qui. Perspiciatis inventore accusamus quisquam
-        eaque veniam consequatur. Quod quasi debitis, et beatae autem sapiente
-        ratione fugiat. Cum impedit nihil illo aspernatur adipisci, libero
-        minima eligendi laudantium vel error, dolorem quasi molestias earum
-        voluptatum dignissimos natus eaque quam. Commodi saepe repudiandae quae
-        alias error porro dignissimos, quos, iusto deleniti, neque quam!
-        Voluptatum tenetur inventore officia minima, est repudiandae eum amet
-        nobis quasi! Eveniet voluptatum adipisci pariatur, odio placeat eius
-        labore tempora perspiciatis tempore quis quia, veritatis sunt
-        asperiores? Amet quisquam nesciunt excepturi debitis, aperiam eligendi
-        eum in eveniet. Voluptatem, numquam odio, provident ab laborum maiores
-        reprehenderit architecto repellat quos expedita modi illo tempora optio
-        in corporis dignissimos ipsam ad delectus pariatur dicta aperiam nam
-        commodi unde nulla! Amet distinctio sapiente voluptate dolore libero?
-        Suscipit totam dolor necessitatibus cum maiores accusamus ipsam vitae
-        ipsa qui aut veniam similique quo velit voluptates, nemo neque corrupti.
-        Omnis, deleniti porro. Mollitia, commodi libero similique sed veniam
-        beatae necessitatibus laborum! Qui eos sunt illum, impedit explicabo et
-        omnis a natus maiores quos illo hic assumenda alias quam iste
-        accusantium non cum nostrum repellendus maxime, dicta quidem. Voluptatum
-        odio asperiores ad sed magnam nesciunt quidem perferendis odit autem,
-        laudantium provident cupiditate animi cum nostrum qui aut voluptatem
-        nemo maxime quibusdam enim adipisci. At accusantium non assumenda omnis
-        voluptatibus esse impedit sunt recusandae illum necessitatibus modi nemo
-        adipisci possimus deleniti doloremque ipsum, suscipit quae tenetur
-        incidunt laudantium ad. Ducimus eius accusantium ad dolore consectetur!
-        Inventore excepturi et repudiandae voluptatem amet, nisi illo facilis
-        atque ab minima hic similique quasi sint eligendi dolorum aspernatur
-        nemo, iure exercitationem praesentium officia autem voluptates in? Unde
-        ratione praesentium error atque, magnam nobis quia eveniet ullam
-        doloribus, nesciunt saepe temporibus architecto esse quidem, illo vero
-        voluptatum beatae omnis nisi? Quia libero, eaque vitae nulla cupiditate
-        laboriosam omnis magni, quod tempore odio harum laborum voluptatibus!
-        Cum vero eos dolor debitis aperiam possimus, deleniti voluptates
-        temporibus sit repellat impedit. Adipisci explicabo saepe deserunt ipsa,
-        suscipit enim eius, earum officiis eligendi incidunt corporis? Ipsa
-        voluptatem totam laudantium, atque impedit iusto. Dolores possimus illum
-        fugiat soluta, quasi earum quisquam porro libero magnam iste, inventore
-        unde ipsum cupiditate mollitia minus pariatur aperiam ullam voluptatem
-        consequatur? Veniam, eligendi, molestias sit dolore debitis nihil
-        cupiditate excepturi, eum voluptate minus neque? Dignissimos accusantium
-        distinctio autem odio molestiae ex cumque iusto aspernatur dolores quis
-        harum, doloribus veniam aliquam sequi reprehenderit sit! Asperiores
-        beatae delectus, sit facilis consequatur ullam aliquam ex officiis quam
-        dolores aspernatur ad tempora explicabo harum quo dolore autem totam?
-        Soluta unde, vero omnis ducimus veritatis, veniam molestiae tempore esse
-        assumenda rem consectetur iste eveniet distinctio. Eos corporis omnis
-        harum itaque libero possimus vero? Iusto optio sapiente nemo, ea
-        doloribus nesciunt nostrum earum a perferendis animi minima facilis quod
-        sit magnam consequuntur possimus cumque dolore dolorem libero voluptas
-        odit? Vel possimus repudiandae quas libero exercitationem officiis in
-        laborum aspernatur expedita. Consectetur placeat quidem, laudantium et
-        fugiat excepturi, distinctio accusamus aut numquam nihil voluptatum
-        aliquam expedita. Saepe, obcaecati aliquid. Nam iste eligendi suscipit
-        tempora temporibus commodi dolore neque minus aliquam architecto
-        reprehenderit sapiente eos animi voluptatem adipisci exercitationem,
-        nihil tenetur totam velit soluta earum cumque, officia natus! Aperiam
-        reiciendis nostrum, voluptatem praesentium animi id eligendi dolorem
-        dolor laboriosam obcaecati itaque optio culpa ad. Sit excepturi ullam
-        deserunt veritatis nulla, est quae maxime ducimus rerum in laborum
-        voluptas voluptates voluptatem, rem impedit esse, fuga quibusdam
-        consequuntur quasi cumque.
-      </p>
-    </div>
+    <>
+      <article className="main_conteiner">
+        <h1>Beaver Yorkshire Terrier</h1>
+        <h2 onClick={(event) => openPharagraph(event)}>Origin History</h2>
+        <p>
+          The Beaver Yorkshire Terrier is a separate subspecies of the Yorkshire
+          Terrier. The breed’s history began with a litter of white-spotted
+          puppies born to a German Yorkie breeder in the 1980s. Werner and
+          Gertrude Beaver had been breeding for about 20 years and were very
+          interested in this breeding. They introduced black and white Yorkies
+          at a show in Wiesbaden. A year later, they were registered in Germany,
+          but it was not until 2007 that the final breed standard was signed. It
+          is an interesting fact that in the name of the breed, you can see the
+          prefix “a la Pom-Pon”, which translates to “colored ball of yarn”. The
+          prefix originated from German singer Margot Eskens when her husband
+          gave her a black and white puppy.
+        </p>
+        <h2 onClick={(event) => openPharagraph(event)}>Appearance</h2>
+        <p>
+          This breed is commonly referred to as a “toy that came to life”
+          because of its appearance. The Beaver Yorkshire Terrier differs from
+          ordinary Yorkshire Terriers in the shade of its coat. The head is
+          proportional to the body. The neck is well defined and quite long. The
+          eyes are medium-sized, usually of a darker shade. The ears are
+          upright, triangle-shaped, set high. The teeth have a straight or
+          scissor-shaped bite. The body is elongated; the tail is not cropped.
+          The chest is well developed. The limbs are straight. The hair of the
+          Biewer Terrier is very thick; the length of the hair grows to the
+          floor. Chest, paws, and abdomen are always white. The body of the pet
+          is usually white-blue, black and white, or bluish. There are also
+          patches of black, white, or sandy hue on the head. Biewer Terriers
+          tend to change their coat shade with age, depending on their genotype.
+        </p>
+        <h2 onClick={(event) => openPharagraph(event)}>Character</h2>
+        <p>
+          The character of the Beaver Yorkshire Terrier is very similar to the
+          standard Yorkshire Terrier, but the ability to hunt has been lost. In
+          general, it is a cheerful dog with an active attitude. It learns the
+          world around it with interest, willingly comes into contact with other
+          people and animals. With children, Biewer Terriers quickly find a
+          common language. You only need to explain that you should not touch
+          the dog while he’s sleeping or feeding, as this can disturb his
+          psyche. The pets are great for keeping in an apartment. They retain
+          their childlike spontaneity for life. At the same time, Biewer
+          Terriers are very smart; once and for all, remember the house rules.
+          The doggie is adapted to travel with the owner, so it is easy to get
+          accustomed to a new place. It’s better to take it with you than leave
+          it with strangers. It will only cause stress for the Biewer Terrier.
+          Despite their small size, they are always ready to protect themselves
+          and their owner if they feel threatened. Some owners of Beaver
+          Yorkshire Terriers start to spoil their cute pets. But this doesn’t
+          seem right; a pampered dog can be a big problem.
+        </p>
+        <h2 onClick={(event) => openPharagraph(event)}>Care</h2>
+        <p>
+          There are no special recommendations for the care of the Beaver
+          Yorkshire Terrier. He should be bathed once a month with a special
+          shampoo for long-haired dogs. The silky hair grows quickly, so the
+          Biewer Terrier, like other Yorkies, needs to be trimmed. Even if he’s
+          not a show dog, it will only make life easier. Wear warm clothing and
+          special shoes in winter to protect his feet from road debris. Keep an
+          eye on his ears and brush them after bathing or a brisk walk. Nails
+          should be trimmed several times a month. Beaver Yorkshire Terriers can
+          be stubborn and refuse to perform tasks during training. But if you
+          find an approach to the pet, you can teach even circus tricks.
+        </p>
+        <h2 onClick={(event) => openPharagraph(event)}>Training</h2>
+        <p>
+          It is best to start training with the most basic rules, such as not
+          taking food from your hands, going to the toilet in the right place,
+          not pulling the leash. Only then can you burden the dog with learning
+          commands. They can already recognize their owners at a young age.
+          Successful training depends on an emotional understanding of the dog
+          and the owner. A good tactic would be to reward at the end. You can
+          take the tasty rewards with you on your walk and train your pet
+          outdoors. Physical punishment should be avoided. Dogs are susceptible
+          even to the owner’s intonation and will immediately sense an angry
+          note.
+        </p>
+        <h2 onClick={(event) => openPharagraph(event)}>Common Diseases</h2>
+        <p>
+          Beaver Yorkshire Terriers have good immunity but don’t take any
+          chances and walk your dog without clothes in cold weather. These dogs
+          are prone to bronchitis. After a walk, check your pet’s coat for
+          pests. Beaver Yorkshire Terrier teeth are prone to early decay. It
+          should be noted that this breed does not tolerate anesthesia well.
+          Biewer Terrier is prone to such diseases: dislocation of the kneecap;
+          gum disease; eye irritation; extrahepatic shunt – surgical
+          intervention is required; pancreatitis.
+        </p>
+        <h2 onClick={(event) => openPharagraph(event)}>Nutrition</h2>
+        <p>
+          Beaver Yorkshire Terriers are prone to obesity. Therefore, it is worth
+          controlling the portions of the pet and does not forget about physical
+          activity. The dog should be fed three times a day. The diet should be
+          balanced. The dog will benefit from lean meat, cereals, and
+          vegetables. Don’t forget vitamin supplements to maintain coat quality.
+          Don’t forget the fats found in dairy products. Water should always be
+          readily available for the Beaver Yorkshire Terrier.
+        </p>
+      </article>
+    </>
   );
 }
 

@@ -1,5 +1,25 @@
 .main_conteiner {
     display: flex;
-    background-color: rgb(51, 39, 39);
-    color: rgb(230, 226, 221);
+    flex-direction: column;
+
+    h1 {
+        font-size: 36px;
+    }
+
+    p {
+        visibility: hidden;
+        height: 0;
+        margin: 0;
+        opacity: 0;
+    }
+
+    .main_p_order {
+        opacity: 1;
+        height: auto;
+        margin: auto;
+        display: block;
+        visibility: visible;
+        transition: .5s all;
+    }
+
 }
