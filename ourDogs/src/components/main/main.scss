@@ -6,6 +6,16 @@
         font-size: 36px;
     }
 
+    h2 {
+        cursor: pointer;
+        width: max-content;
+
+    }
+
+    h2:hover {
+        color: rgb(196, 168, 13);
+    }
+
     p {
         visibility: hidden;
         height: 0;
