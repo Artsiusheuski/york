@@ -1,0 +1,22 @@
+.wrapper_contacts {
+    display: flex;
+    flex-direction: column;
+
+    img {
+        width: 20px;
+    }
+
+    .close_icons {
+        margin-left: -700px;
+        overflow: hidden;
+        visibility: hidden;
+
+    }
+
+    .open_icons {
+        // margin-left: none;
+        transition: 1s all ease;
+        visibility: visible;
+    }
+
+}

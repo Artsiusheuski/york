@@ -1,4 +1,5 @@
 import "./main.scss";
+// import text from "../../assets/info/text.json";
 
 function Main() {
   function openPharagraph(event: React.MouseEvent<HTMLElement>): void {
@@ -12,6 +13,7 @@ function Main() {
     <>
       <article className="main_conteiner">
         <h1>Beaver Yorkshire Terrier</h1>
+
         <h2 onClick={(event) => openPharagraph(event)}>Origin History</h2>
         <p>
           The Beaver Yorkshire Terrier is a separate subspecies of the Yorkshire

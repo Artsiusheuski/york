@@ -2,10 +2,10 @@ import "./App.scss";
 import Main from "./components/main/Main";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
-import AboutUs from "./components/main/AboutUs";
-import Contacts from "./components/main/Contacts";
-import Gallery from "./components/main/Gallery";
-import Links from "./components/main/Links";
+import AboutUs from "./components/main/abouts/AboutUs";
+import Contacts from "./components/main/contacts/Contacts";
+import Gallery from "./components/main/gallery/Gallery";
+import Links from "./components/main/links/Links";
 import Error from "./Error";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
